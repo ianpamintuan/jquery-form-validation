@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>jQuery Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1 class="text-center">jQuery Form Validation</h1>
+        </header>
+        
+        <form>
+            
+            <div class="col-sm-6 col-sm-offset-3 form-wrapper">
+                <div class="form-group required">
+                    <label for="lastName" class="control-label">Lastname</label>
+                    <input type="text" name="lastName" id="lastName" class="form-control" required>
+                </div>
+
+                <div class="form-group required">
+                    <label for="firstName" class="control-label">Firstname</label>
+                    <input type="text" name="firstName" id="firstName" class="form-control" required>
+                </div>
+
+                <div class="form-group required">
+                    <label for="email" class="control-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Birthdate</label>
+                    <input type="date" name="birthDate" id="birthDate" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select class="form-control">
+                        <option>Japan</option>
+                        <option selected>Philippines</option>
+                        <option>USA</option>
+                        <option>United Kingdom</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <br>
+                    <label class="radio-inline">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        Female
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Options</label>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Receive emails for discounts. 
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Receive emails for announcements. 
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Receive emails for latest events. 
+                        </label>
+                    </div>                
+                </div>
+
+                <div class="checkbox required">
+                    <label>
+                        <input type="checkbox" id="terms" required>
+                        I accept the terms.
+                    </label>
+                </div>
+                
+                <input type="submit" class="btn btn-primary" id="btnSubmit">
+                
+                <div id="errorMessage" tabindex="100"></div>
+            
+            </div>
+
+        </form>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
